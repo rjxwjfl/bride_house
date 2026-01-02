@@ -6,6 +6,9 @@ class StyleConfigs {
 
   static TextStyle headLineBold = const TextStyle(fontSize: 36.0, fontWeight: FontWeight.w800);
 
+  static TextStyle extraTitleMed = const TextStyle(fontSize: 26.0, fontWeight: FontWeight.w600);
+  static TextStyle extraTitleBold = const TextStyle(fontSize: 26.0, fontWeight: FontWeight.w800);
+
   static TextStyle titleBold = const TextStyle(fontSize: 22.0, fontWeight: FontWeight.w800);
   static TextStyle titleNormal = const TextStyle(fontSize: 22.0);
 
@@ -30,16 +33,20 @@ class StyleConfigs {
   static TextStyle bodyNormal = const TextStyle(fontSize: 14.0, height: 1.5);
   static TextStyle bodyBold = const TextStyle(fontSize: 14.0, fontWeight: FontWeight.w800, height: 1.5);
   static TextStyle bodyMed = const TextStyle(fontSize: 14.0, fontWeight: FontWeight.w600, height: 1.5);
-  static TextStyle bodyBoldLS = const TextStyle(fontSize: 14.0, fontWeight: FontWeight.w800, letterSpacing: 5.0, height: 1.5);
+  static TextStyle bodyBoldLS = const TextStyle(fontSize: 14.0, fontWeight: FontWeight.w800, letterSpacing: 2.0, height: 1.5);
 
   static TextStyle captionNormal = const TextStyle(fontSize: 12.0);
   static TextStyle captionMed = const TextStyle(fontSize: 12.0, fontWeight: FontWeight.w600);
   static TextStyle captionBold = const TextStyle(fontSize: 12.0, fontWeight: FontWeight.w800);
 
+  static TextStyle tableTitleBold = const TextStyle(fontSize: 11.0, fontWeight: FontWeight.w800);
+  static TextStyle tableRow = const TextStyle(fontSize: 11.0);
+
   static TextStyle categoryBoldLS = const TextStyle(fontSize: 10.0, fontWeight: FontWeight.w800, letterSpacing: 5.0);
   static TextStyle notificationBadge = const TextStyle(fontSize: 10.0, fontWeight: FontWeight.w600);
 
   static TextStyle extraSmall = const TextStyle(fontSize: 10.0);
+  static TextStyle extraSmallMed = const TextStyle(fontSize: 10.0, fontWeight: FontWeight.w600);
 
   static Container menuTitleFocus({required Color color, required double height, double width = 4.0, double? borderRadius}) {
     return Container(
