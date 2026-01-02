@@ -8,36 +8,35 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 
 ## 📖 Project Background (기획 배경)
-고가의 웨딩 드레스는 대여와 반납 과정에서 **오염, 파손, 분실** 등의 이슈가 빈번하게 발생합니다. 기존의 수기 장부나 엑셀 관리는 실시간 상태 확인이 어렵고, 히스토리 추적이 불가능하다는 단점이 있었습니다.
 
-**BrideHouse**는 샵 매니저가 모바일 앱을 통해 드레스의 출고/반납 상태를 즉시 체크하고, 사진과 함께 기록을 남겨 분쟁을 예방하며 효율적인 재고 관리를 돕기 위해 개발되었습니다.
+본 애플리케이션은 샵 매니저가 모바일 앱을 통해 드레스의 출고/반납 상태를 즉시 체크하고, 사진과 함께 기록을 남겨 분쟁을 예방하며 효율적인 재고 관리를 돕기 위해 개발됨.
 
 ## ✨ Key Features (핵심 기능)
 
 ### 1. 🔍 QR/Barcode Scanner (상품 식별)
-* 드레스 태그의 QR/바코드를 스캔하여 즉시 상품 정보를 불러옵니다.
-* 수기 입력 없이 빠르고 정확한 상품 조회가 가능합니다.
+* 드레스 태그의 QR/바코드를 스캔하여 상품 정보 즉시 호출.
+* 수기 입력 오류 방지 및 신속한 상품 조회 가능.
 
 ### 2. 📝 Check-in & Check-out (입출고 검수)
-* **대여(Out):** 나가는 드레스의 상태(비즈 탈락 여부, 오염 등)를 체크리스트로 확인합니다.
-* **반납(In):** 반납된 드레스의 손상 여부를 확인하고, **현장 사진을 업로드**하여 DB에 저장합니다.
+* **대여(Out):** 출고 전 드레스 상태(비즈 탈락, 오염 등)를 체크리스트로 확인.
+* **반납(In):** 반납된 드레스의 손상 여부 확인 및 **현장 사진 업로드**를 통한 증빙 데이터 저장.
 
 ### 3. 📊 Dashboard & Inventory (현황판)
-* 현재 대여 중인 드레스, 세탁 중인 드레스, 수선이 필요한 드레스 현황을 한눈에 파악합니다.
-* 날짜별 대여 스케줄 캘린더 뷰를 제공합니다.
+* 대여 중 / 세탁 중 / 수선 필요 등 드레스 상태별 현황 실시간 모니터링.
+* 날짜별 대여 스케줄 캘린더 뷰 제공.
 
 ### 4. 🔔 Alert System (알림)
-* 반납 예정일이 지난 미반납 상품에 대한 경고 알림.
-* 수선 완료 예정일 알림 등 관리자 업무 보조.
+* 반납 예정일 초과 미반납 상품에 대한 경고 알림 발송.
+* 수선/세탁 완료 예정일 알림을 통한 일정 관리 지원.
 
 ## 🛠 Tech Stack (기술 스택)
 
 | Category | Technology |
 | --- | --- |
-| **Mobile App** | Flutter (Dart) or React Native |
-| **Backend** | Node.js (Express) or Python (Django/FastAPI) |
-| **Database** | PostgreSQL / Firebase (이미지 저장용) |
-| **State Mgt** | Provider / Riverpod / Redux |
+| **Mobile App** | Flutter (Dart) |
+| **Backend** | Node.js (Express) |
+| **Database** | MySQL / Firebase (인증) / Google Cloud Storage |
+| **State Mgt** | Provider / Riverpod / BloC |
 | **CI/CD** | Github Actions |
 
 *(본인이 실제로 사용한 기술로 바꿔주세요)*
